@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import com.example.demo.entity.Studentity;
 
 @Service
-public class StudserviceImpl implements Studservice {
+public class StudserviceImpl implements StudentService {
 
     private final Map<Long, Studentity> store = new HashMap<>();
 
