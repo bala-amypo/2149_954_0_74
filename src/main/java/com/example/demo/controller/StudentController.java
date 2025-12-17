@@ -25,6 +25,17 @@ public class StudentController{
     }
     //GET BY ID
     @GetMapping("/get/{id}")
-    public Studentity getStudentById(@)
+    public Studentity getStudentById(@PathVariable int id){
+        return ser.getById(id);
+    }
+
+    //PUT (UPDATE)
+    @PutMapping("/update/{id}")
+    public Studentity updateStudent(
+            @PathVariable int id,
+            @RequestBody Studentity st){
+        return ser.update(id,st);        
+
+        }
 }
 
