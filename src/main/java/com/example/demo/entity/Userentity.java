@@ -12,14 +12,14 @@ import jakarta.persistence.Id;
 
 @Entity
 
-public class Student {
+public class Userentity {
 @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String email;
-    private LocalDate dob;
-    private Float cgpa;
+    private String password;
+    private String role;
 
 
     public Long getId() {
